@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-------This is Css work ---------->
+    <style>
+        /* Start here nav design */
+        .nav {
+            padding: 0;
+            margin-bottom: 20%;
+            font: 1em sans-serif;
+            background-color: rgb(58, 164, 250);
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .ul, li {
+            list-style-type: none;
+            display: inline;
+            padding: 10px;
+            margin: 20px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+       .container {
+        background-color: rgb(135, 227, 255);
+        height: 60vh;
+        border-radius: 3vh;
+       }
+       :hover.container{
+        background-color: rgb(135, 227, 255);
+        color:rgb(79, 89, 92); 
+        transition: 2s;
+       }
+       .box1 {
+        height: 49.98%;
+        width: 300px;
+        border-radius: 20px;
+        float: right;
+        position: relative; 
+        top: -70px; 
+       }
+       .box1 .img img {
+        border-radius: 20px;
+        width: 100%; 
+        height: auto;
+       }
+       .aboutme {
+        height: 70vh;
+        width: 500px;
+        margin: 10px;
+       }
+       .aboutme .myjpg img {
+        height: 100%; 
+        width: 100%; 
+        object-fit: cover; 
+        border-radius: 20px; 
+       }
+       /* Button styles */
+       .btn1, .btn2, .fb, .twitter, .linkdin {
+          border: 1px solid black;
+          color: white;
+          padding: 15px 30px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+       }
+       .btn1 {
+          background-color: #3df8378a;
+         
+       }
+       :hover.btn1{
+        background-color: #addbaa;
+       }
+       .btn2 {
+          background-color: #8c6efa;
+       }
+       :hover.btn2{
+        background-color: #b5a4f3;
+       }
+       .fb{
+          background-color: #5996f1;
+          border-radius: 50px;
+        font-size: large;
+   
+       }
+       :hover.fb{
+        background-color: #b7cbf3;
+       }
+       .twitter {
+          background-color: #000000;
+          border-radius: 50px;
+        font-size: large;
+   
+       }
+       :hover.twitter{
+        background-color: #494848;
+       }
+       .linkdin {
+          background-color: #1640ffe3;
+          border-radius: 50px;
+        font-size: large;
+   
+       }
+       :hover.linkdin{
+        background-color: #8e9ddfe3;
+       }
+       .box3 {
+          height: 60vh;
+          width: 30%;
+          border-radius: 20px;
+          display: inline-block; 
+          vertical-align: top; 
+          margin: 10px;
+       }
+       .box3 img {
+          height: 100%;
+          width: auto;
+          object-fit: contain; 
+          border-radius: 20px;
+       }
+       :hover.box3{
+        transform-style:inherit;
+   
+        transition: 1.5s;
+        transform: rotate(10deg);
+       }
+      
+       .box4 {
+          height: 60vh;
+          width: 30%;
+          /*border: 1px solid black;*/
+          display: inline-block; 
+          vertical-align: top; 
+          margin: 10px;
+          font: 1em sans-serif; 
+          border-radius: 10px;
+       }
+       :hover.box4{
+        background-color: #000000;
+        color: white;
+        transition: 3s;
+       }
+       .experience{
+        padding: 10px;
+        margin: 20px;
+        background-color: #ffb452;
+        font: 1em sans-serif;
+        border-radius: 20px;
+      
+        
+       }
+       :hover.experience{
+        background-color: rgb(243, 220, 220);
+        text-decoration: underline;
+       }
+       .skills{
+        padding: 10px;
+        margin: 20px;
+        background-color: #ffb452;
+        font: 1em sans-serif;
+        border-radius: 20px;
+      
+       }
+       :hover.skills{
+        background-color: rgb(243, 220, 220);
+        text-decoration: underline;
+       }
+       .about{
+        padding: 10px;
+        margin: 20px;
+        background-color: #ffb452;
+        font: 1em sans-serif;
+        border-radius: 20px;
+     
+       }
+       :hover.about{
+        background-color: rgb(243, 220, 220);
+        text-decoration: underline;
+       }
+       .myservices{
+         text-align: center;
+       font: 1em sans-serif;
+       }
+       :hover.myservices{
+         text-decoration: underline;
+         transform: rotate(20deg);
+    
+         
+       }
+       .blue{
+         color: #5996f1;
+       }
+       .graphics{
+         height: 48vh;
+          width: 30%;
+          border: #000000 1px solid;
+          padding: 50px;
+          text-align: center;
+          margin: 10px;
+          font: 1em sans-serif;
+          border-radius: 20px;
+      
+       display: inline-block;
+          
+          
+          
+       }
+       :hover.graphics{
+         text-decoration: underline;
+         background-color: rgb(205, 237, 255);
+         transition: 1.0s;
+         
+       }
+       .web{
+         height: 48vh;
+          width: 30%;
+          border: #000000 1px solid;
+          padding: 50px;
+          text-align: center;
+          margin: 10px;
+          font: 1em sans-serif;
+          border-radius: 20px;
+          display: inline-block;
+          
+         
+          
+       }
+       :hover.web{
+         text-decoration: underline;
+         background-color: rgb(205, 237, 255);
+         transition: 1.0s;
+         
+       }
+      
+       .pen{ 
+         text-align: center;
+        
+         
+       }
+       .center{
+         text-align: center;
+       }
+       .left{
+         text-align: left;
+       }
+       .readbtn{
+         padding: 15px;
+         margin: 20px;
+         border-radius: 20px;
+         background-color: #ffb452;
+
+       }
+       :hover.readbtn{
+         background-color: rgb(243, 220, 220);
+         text-decoration: underline;
+       }
+       .review{
+         margin: 20px;
+         padding: 20px;
+         text-align: left;
+       }
+       .customer{
+         height:  80px;
+         margin: 20px;
+         padding: 0px;
+         border-radius: 10px;
+         border: #000000 1px solid;
+         
+         width: 90%;
+         background-color: #5996f1;
+       }
+       .blog{
+         text-align: center;
+         font: 1em sans-serif;
+       }
+       :hover.blog{
+         text-decoration: underline;
+        
+       }
+       .post1{
+         height: 48vh;
+          width: 30%;
+         
+          padding: 50px;
+          text-align: center;
+          margin: 10px;
+          font: 1em sans-serif;
+          border-radius: 20px;
+          display: inline-block;
+          
+       }
+       .post1 img{
+         height: 100%;
+          width: auto;
+          object-fit: cover; 
+          border-radius: 20px;
+       }
+       :hover.post1{
+         transform: rotate(20deg); 
+         background-color: #aed3f2;
+         
+       }
+    
+        
+       
+ 
+         
+       
+    </style>
+ 
+    <!----------nav section---------->
+    <div class="nav">
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#pricing">pricing</a></li>
+      <li><a href="#services">services</a></li>
+      <li><a href="#protfolio">protfolio</a></li>
+      <li><a href="#Blog">blog</a></li>
+      <li><a href="#About">About</a></li>
+    </ul>
+    </div>
+
+    <div class="container">
+        <span color="">Hi There,</span>
+        <h2>My Name is Khalid Sanawer Hussian- <br> and I am Web Developer.</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and <br> Consonantia, there live the blind texts.</p>
+      
+        <button class="btn1">Hire Me</button>
+        <button class="btn2">View Portfolio</button>
+       <div class="box1">
+        <div class="img">
+            <img src="office.jpg.jpg" alt="Background Image">
+        </div>
+       </div>
+      <div class="socialmedia">
+        <h4>
+           <button class="fb">f</button> 
+            <button class="twitter">X</button>
+            <button class="linkdin">in</button>
+        </h4>  
+    </div>
+       </div>
+    
+    <div class="box3">
+        <img src="my.jpg" alt="My Image">
+    </div>
+    
+    <button class="skills">
+        <span>
+           Skills
+        </span>
+        <button class="about">
+            about me
+           <span>
+               
+           </span>
+          </button>
+          <button class="experience">
+            <span>
+             my experience
+            </span>
+           </button>
+       </button>
+   
+       <div class="box4"> 
+        <h2>My Story</h2> 
+        <p>Far far away, behind the word mountains, far from the countries <br> <br> Vokalia and Consonantia, there live the blind texts. Separated   &nbsp;<br> <br>they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+       <h3>I Do Web Design & Developement since I was 18 Years Old</h3>
+       <p>i am not expert but i have good knowledge about html css bootstrap. <br> which i can use make good website.</p>
+    </div>
+    <div class="myservices">
+      <p class="blue">Services</p>
+      <h3>This is My Expertise, The Services <br> I'll Provide My Clients</h3> 
+
+    </div>
+    <div class="graphics">
+      <h4>Graphic Design </h4>
+      <div class="pen">
+         <img src="pengif.gif" alt="Graphics" height="110px" width="110px">
+         <p class="left">Far far away, behind the word  mountains, far from the <br>countries Vokalia and Consonantia, there live the blind  <br> texts. </p>
+        <button class="readbtn"> <span id="dots"></span>Read More...<span id="more"></button>      
+      </div>
+      
+      
+
+    </div>
+    <div class="web">
+      <h4>Web Design </h4>
+      <div class="pen">
+         <img src="webdesign.gif" alt="Graphics" height="110px" width="110px">
+         <p class="left">Far far away, behind the word  mountains, far from the <br>countries Vokalia and Consonantia, there live the blind  <br> texts. </p>
+        <button class="readbtn"> <span id="dots"></span>Read More...<span id="more"></button> 
+      </div>
+      
+       
+      </div>
+      <div class="blog">
+         <h3>latest blog</h3>
+         <div class="post1">
+            <img src="post1.jpg" alt="">
+         </div>
+         <div class="post1">
+            <img src="post2.jpg" alt="">
+
+         </div>
+         <div class="post1">
+            <img src="post3.jpg" alt="">
+         </div>
+       
+         <div class="post1">
+            <img src="code.jpg" alt="">
+         </div>
+
+         
+      </div> 
+      </div>
+
+    
+  </body>
+</html>
